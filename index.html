@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedro Graça</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpg" href="favicon.ico"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="header" id="home">
-        <div class="header-left">
-            <div class="title">
-                <a href="#home"><img src="images/logo.png" alt="Pedro Henrique Graça logo"></a>
-            </div>
+      <div class="header-left">
+        <div class="title">
+          <a href="#home"
+            ><img src="images/logo.png" alt="Pedro Henrique Graça logo"
+          /></a>
         </div>
-        <div class="header-right">
-            <ul>
-                <li><a href="#sobremim">Sobre Mim</a></li>
-                <li><a href="">Meus Projetos</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </div>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li><a href="#sobremim" id="sobrebutton">Sobre Mim</a></li>
+          <li><a href="#meusprojetos" id="projetosbutton">Meus Projetos</a></li>
+          <li><a href="" id="contatobutton">Contato</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="first-section" id="home">
-        <div class="content">
-            <img class="pedro" src="images/logo.png">
+      <div class="content">
+        <img class="pedro" src="images/logo.png" />
         <div class="text">
-            <h1>Pedro Henrique Graça</h1>
-            <p class="desc">Software Engineer</p>
-            </div>
+          <h1>Pedro Henrique Graça</h1>
+          <p class="desc">Software Engineer</p>
         </div>
+      </div>
     </div>
 
     <div class="second-section" id="sobremim">
-        <div class="content">
-            <h1>Sobre Mim</h1>
-            <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-        <div class="curriculum">
-            <a download href="/files/curriculo.pdf">Baixe Meu Currículo!</a>
-        </div>
-        <div class="icons">
-            <a href="https://github.com/pedrogrca" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-            <a href="https://www.linkedin.com/in/pedrogrca/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+      <div class="content">
+        <h1>Sobre Mim</h1>
+        <p class="sobre">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. <br />Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.<br />
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum
+        </p>
+      </div>
+      <div class="curriculum">
+        <a download id="curriculum-button" href="/files/curriculo.pdf">Baixe Meu Currículo!</a>
+      </div>
+      <div class="icons">
+        <a id="github" href="https://github.com/pedrogrca" target="_blank"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/pedrogrca/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
     </div>
-</body>
+    <div class="third-section" id="meusprojetos">
+      <div class="content">
+        <h1>Meus Projetos</h1>
+        <p>Visualize meus projetos!</p>
+        <div class="blocks">
+            <div class="projetos">
+                <div class="blackjack">
+                    
+                    <h4>BlackJack</h4>
+                    <p id="blackjacktext">Um projeto de um jogo BlackJack</p>
+                    <a href="https://pedrosblackjack.netlify.app" target="_blank"><img id="blackjackimg" src="/images/blackjack.png"></a>
+                    <p id="tectext">Tecnologias Usadas:</p>
+                    <ul>
+                   <li><a id="javascript"><i class="fa-brands fa-js"></i></a></li> 
+                   <li><a id="html"><i class="fa-brands fa-html5"></i></a></li>
+                   <li><a id="css"><i class="fa-brands fa-css3-alt"></i></a></li>
+                </ul>
+
+                </div>
+            </div>
+        </div>
+  
+      </div>
+   
+
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
